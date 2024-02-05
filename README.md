@@ -2,7 +2,7 @@
 
 [![Main Kittygram workflow](https://github.com/RavenIV/kittygram_final/actions/workflows/main.yml/badge.svg)](https://github.com/RavenIV/kittygram_final/actions/workflows/main.yml)
 
-Социальная сеть для обмена фотографиями любимых домашних питомцев. 
+Kittygram -- cоциальная сеть для обмена фотографиями любимых домашних питомцев. 
 Авторизованные пользователи могут добавлять, редактировать и удалять карточки собственных котиков,
 а также смотреть карточки других пользователей.
 
@@ -10,17 +10,14 @@
 
 Проект состоит из бэкенд-приложения на Django и фронтенд-приложения на React.
 
-Бэкенд:
-
 * Python (3.9)
 * Django (3.2.3)
 * Django REST framework (3.12.4)
 * Djoser (2.1.0)
-
-Фронтенд:
-
 * Node.js
 * React
+* Docker
+* Gunicorn
 
 ## Запустить проект
 
@@ -69,20 +66,17 @@ docker compose -f docker-compose.production.yml exec backend cp -r /app/collecte
 * IP-адрес, доменное имя
 
 ```
-ALLOWED_HOSTS=127.0.0.1, localhost, <your_host>, <domain_name>
+ALLOWED_HOSTS=127.0.0.1,localhost,<your_host>,<domain_name>
 ```
 
-* порта PostgreSQL в контейнере (по умолчанию 5432)
+* порт PostgreSQL в контейнере (по умолчанию 5432)
 
 ```
 DB_PORT=0000
 ``` 
 
-* для для запуска бэкенд-приложения в режиме разработки с использованием SQLite
+* для запуска бэкенд-приложения в режиме разработки с использованием SQLite
 
 ```
 DEBUG=True
 ``` 
-
-Подробнее о запуске бэкенда можно посмотреть в README.md в директории backend.
-
