@@ -52,14 +52,12 @@ docker compose -f docker-compose.production.yml exec backend python manage.py mi
 
 ```
 docker compose -f docker-compose.production.yml exec backend python manage.py collectstatic
-```
-
-```
 docker compose -f docker-compose.production.yml exec backend cp -r /app/collected_static/. /backend_static/static/
 ```
 
-Проект будет доступен на странице http://localhost:9000/
+## Демо
 
+[**kittygram**](https://kittygram-iv.sytes.net/)
 
 
 ## Переменные окружения
