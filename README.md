@@ -1,14 +1,16 @@
-# Kittygram
+# KITTYGRAM
 
 [![Main Kittygram workflow](https://github.com/RavenIV/kittygram_final/actions/workflows/main.yml/badge.svg)](https://github.com/RavenIV/kittygram_final/actions/workflows/main.yml)
 
-Kittygram -- cоциальная сеть для обмена фотографиями любимых домашних питомцев. 
+
+**Kittygram** - cоциальная сеть для обмена фотографиями любимых домашних питомцев. 
+
 Авторизованные пользователи могут добавлять, редактировать и удалять карточки собственных котиков,
-а также смотреть карточки других пользователей.
+а также смотреть карточки других посетителей.
+
 
 ## Стек технологий
 
-Проект состоит из бэкенд-приложения на Django и фронтенд-приложения на React.
 
 * Python (3.9)
 * Django (3.2.3)
@@ -19,7 +21,9 @@ Kittygram -- cоциальная сеть для обмена фотографи
 * Docker
 * Gunicorn
 
+
 ## Запустить проект
+
 
 Установить [Docker](https://www.docker.com/).
 
@@ -27,9 +31,6 @@ Kittygram -- cоциальная сеть для обмена фотографи
 
 ```
 git clone git@github.com:RavenIV/kittygram_final.git
-```
-
-```
 cd kittygram_final
 ```
 
@@ -59,7 +60,11 @@ docker compose -f docker-compose.production.yml exec backend cp -r /app/collecte
 
 Проект будет доступен на странице http://localhost:9000/
 
+
+
 ## Переменные окружения
+
+
 
 В файл .env также можно добавить:
 
@@ -75,8 +80,14 @@ ALLOWED_HOSTS=127.0.0.1,localhost,<your_host>,<domain_name>
 DB_PORT=0000
 ``` 
 
-* для запуска бэкенд-приложения в режиме разработки с использованием SQLite
+* включение режима разработки с использованием SQLite
 
 ```
 DEBUG=True
 ``` 
+
+
+## Разработчики
+
+
+* [Irina Vorontsova](https://github.com/RavenIV) - бэкенд
