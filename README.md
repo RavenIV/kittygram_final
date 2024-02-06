@@ -78,12 +78,17 @@ ALLOWED_HOSTS=127.0.0.1,localhost,<your_host>,<domain_name>
 DB_PORT=0000
 ``` 
 
-* включение режима разработки с использованием SQLite
+* включение режима разработки
 
 ```
 DEBUG=True
 ``` 
 
+* использование SQLite
+
+```
+USE_SQLite=True
+```
 
 ## Разработчики
 
