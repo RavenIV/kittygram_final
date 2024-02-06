@@ -87,7 +87,7 @@ DEBUG=True
 * использование SQLite
 
 ```
-USE_SQLite=True
+USE_SQLITE=True
 ```
 
 ## Разработчики
